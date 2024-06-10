@@ -1,12 +1,12 @@
 body {
+}
     CSS (styles.css):
 .slideshow-container {
     color: #3C4142;
     background-color: #3C4142;
     max-width: 300px;
     position: absolute;
-    margin: auto;
-}
+    margin: auto;}
 
 .slide {
     display: none;
