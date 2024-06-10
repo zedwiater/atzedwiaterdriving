@@ -1,6 +1,7 @@
 body {
     CSS (styles.css):
 .slideshow-container {
+    color: #3C4142;
     max-width: 800px;
     position: absolute;
     margin: auto;
