@@ -20,7 +20,7 @@ body {
   height: auto; /* Maintain aspect ratio */
 }
 .slideshow-container {
-  max-width: 50%;
+  max-width: 70%;
   position: relative;
   overflow: hidden;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 .slide img {
-  width: 50%;
+  width: 70%;
   height: auto;
 }
 
