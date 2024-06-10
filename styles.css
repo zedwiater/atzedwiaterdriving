@@ -1,0 +1,80 @@
+body {
+    font-family: fantasy;
+    font: arial;
+    background-color: #3C4142;
+    color: darkorchid;
+    margin: 0;
+    padding: 0;
+}
+.logo img {
+  width: 150px; /* Set the width of the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+.slideshow-container {
+  max-width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 50%;
+  height: auto;
+}
+
+header {
+    color: darkorchid;
+    background-color: #2f2f2f;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    color: darkorchid;
+    background-color: #2f2f2f;
+    font-size: medium;
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    color: darkorchid;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: darkorchid;
+    color: #3C4142;
+    font-size: medium;
+    padding: 20px;
+}
+
+footer ul {
+    background-color: #3C4142;
+    color: darkorchid;
+    font-size: xx-large;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    background-color: #3c4142;
+    color: darkorchid;
+    display: inline;
+}
