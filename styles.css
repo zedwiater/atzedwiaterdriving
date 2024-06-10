@@ -1,37 +1,35 @@
 body {
 }
-    CSS (styles.css):
-.slideshow-container {
-    color: #3C4142;
-    background-color: #3C4142;
-    max-width: 300px;
-    position: absolute;
-    margin: auto;}
-
-.slide {
-    display: none;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: relative;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: darkorchid;
-    background-color: #3C4142; 
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
+      CSS (styles.css):
+      .slideshow-container {
+          max-width: 800px;
+          position: relative;
+          margin: auto;
+      }
+      
+      .slide {
+          display: none;
+      }
+      
+      .prev, .next {
+          cursor: pointer;
+          position: relative;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+      }
+      
+      .prev {
+          left: 10px;
+      }
+      
+      .next {
+          right: 10px;
+      }
     .p1 {
   font-family: "Times New Roman", Times, serif;
 }
