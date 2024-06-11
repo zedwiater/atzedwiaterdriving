@@ -17,12 +17,12 @@ header {
 }
 
 .logo {
-    height: 25px; /* Adjust as necessary */
+    height: 14px; /* Adjust as necessary */
     margin-right: 10px;
 }
 
 .header-text {
-    font-size: 22px; /* Adjust as necessary */
+    font-size: 50px; /* Adjust as necessary */
     color: #333; /* Text color */
 }
       CSS (styles.css):
