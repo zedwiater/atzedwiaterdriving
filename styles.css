@@ -1,4 +1,29 @@
 body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px; /* Adjust as necessary */
+    margin-right: 10px;
+}
+
+.header-text {
+    font-size: 18px; /* Adjust as necessary */
+    color: #333; /* Text color */
 }
       CSS (styles.css):
       .slideshow-container {
