@@ -1,17 +1,18 @@
-      <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Website with Logo and Text</title>
-      <link rel="stylesheet" href="styles.css">
+    <title>AtZedwiaterDriving</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-      <body>
+
+<body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Logo">
-              <span class="header-text">@tZedwiaterDriving</span>
+            <img src="your-logo.png" alt="Logo">
         </div>
         <nav>
             <ul>
@@ -22,63 +23,56 @@
             </ul>
         </nav>
     </header>
-     <body>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <img src="image1.jpg" alt="Image 1">
-        </div>
-        <div class="mySlides fade">
-            <img src="image2.jpg" alt="Image 2">
-        </div>
-        <!-- Add more slides as needed -->
-        <div class="mySlides fade">
-            <img src="image16.jpg" alt="Image 16">
-        </div>
 
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <!-- Add more dots as needed -->
-        <span class="dot" onclick="currentSlide(16)"></span> 
-    </div>
-
-    <script src="scripts.js"></script>
-</body>
-
+    <main>
+        <section id="home">
+            <h1> AtZedwiaterDriving</h1>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="slide1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="slide2.jpg" style="width:100%">
+                </div>
+                <!-- Add more slides as needed -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <!-- Add more dots as needed -->
+            </div>
+        </section>
 
         <section id="services">
             <h2>Our Services</h2>
-            <ul>
-                <li>Bourbon Trail</li> <li>Event Dropoff & pickup</li>
-    <li>Local Discounted Rides</li>
-                <li>Airport Transportation</li><li>Long Trips</li>
-    <li>Serving Kentucky, Ohio, Indiana, and beyond</li>
-            </ul>
+            <!-- Add your services description here -->
         </section>
 
         <section id="about">
             <h2>About Us</h2>
-          <ul><li><p>Over a decade of experience getting real people safe to thier destination. I am a 5 star lyft driver with over 7000 rides and almost a million miles. I enjoy giving clients a great luxurious ride in my Chrysler Pacifica Hybrid loaded with games and comfortable leather seats and bluetooth aux control for passengers to enjoy thier music.</p></li></ul>
             <!-- Add information about your company here -->
         </section>
 
         <section id="contact">
             <h2>Contact Us</h2>
-          <ul><li>Phone: 859.771.7004</li><li>Email: zedwiater2@gmail.com</li></ul>
-          <p>Rides prices are locally competitive and priced based off many factors from location,traffic,current rates,distance,and time. Follow me on snap and other socials for discounts and location info when I am driving or reach out through this online form to book your best hired ride yet.</p>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </section>
-          </body>
     </main>
+
     <footer>
         <ul>
-            <li><a href="https://snapchat.com/t/UXi5IIs0"><i class="fab fa-snapchat"></i></a></li>
-            <li><a href="https://www.facebook.com/share/LwY2aaFp12okbpsV/?mibextid=LQQJ4d"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://www.instagram.com/zedwiater?igsh=MXVydWF6Y3lwYXZlcg%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://discord.gg/JsCqbyzr"><i class="fab fa-discord"></i></a></li>
+            <li><a href="#"><i class="fab fa-snapchat"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-discord"></i></a></li>
         </ul>
     </footer>
 
@@ -86,3 +80,4 @@
 </body>
 
 </html>
+
