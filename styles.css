@@ -31,8 +31,23 @@ main {
     padding: 20px;
 }
 
-section {
-    margin-bottom: 20px;
+#services {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light grey background for contrast */
+}
+
+#services h2 {
+    color: #9932CC; /* Dark Orchid */
+    margin-bottom: 10px;
+}
+
+#services ul {
+    list-style-type: disc; /* Disc bullets for list items */
+    padding-left: 20px; /* Indentation for the list */
+}
+
+#services li {
+    margin-bottom: 5px; /* Space between list items */
 }
 
 footer {
