@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: grey;
-    color: white;
+    color: 2b2b2b;
     margin: 0;
     padding: 0;
 }
@@ -23,7 +23,7 @@ nav ul li {
 }
 
 a {
-    color: #7B68EE;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -33,11 +33,11 @@ main {
 
 #services {
     padding: 20px;
-    background-color: #5a5a5a; /* Light grey background for contrast */
+    background-color: #2b2b2b; /* Light grey background for contrast */
 }
 
 #services h2 {
-    color: #9932CC; /* Dark Orchid */
+    color: #2b2b2b; /* Dark Orchid */
     margin-bottom: 10px;
 }
 
@@ -140,7 +140,7 @@ body {
     color: #ffffff; /* Dark Orchid */
 }
 
-header, nav, main, footer {
+header, nav, main, footer, body{
     color: inherit; /* Inherit text color from body */
 }
 
