@@ -1,112 +1,258 @@
-      <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AtZedwiaterDriving</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
+    <title>Player Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
+        body {
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px; /* Move the logo to the left */
+            width: 200px; /* Adjust the size as needed */
+            height: 175px; /* Adjust the size as needed */
+        }
+
+        .title-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .word {
+            display: flex;
+        }
+
+        .letter {
+            padding: auto;
+            width: 50px; /* Adjust the size to 50% of the current size */
+            height: 50px;
+        }
+
+        .tire-tracks img {
+            padding-top: 20px;
+            width: 1000px; /* Full page width */
+            height: 50; /* Same height as the logo */
+        }
+
+        .container {
+            background-color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .player-section {
+            background-color: lightslategray;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-top: 30px;
+        }
+
+.player-card {
+    display: inline-block;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    position: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-right: 20px;
+    width: 200px; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+}
+
+.player-image {
+    width: 100%; /* Make the image fit the card width */
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+        }
+
+        @keyframes scroll-players {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .player-section {
+            animation: scroll-players 25s linear infinite;
+        }
+
+        .social-section {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .about-section {
+            background-color: black;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .about-text {
+            display: inline-block;
+            padding-left: 100%;
+            font-size: 2em; /* Adjust the font size to 2/3 of the box height */
+            animation: scroll 10s linear infinite, colorchange 3s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        @keyframes colorchange {
+            0% { color: red; }
+            33% { color: green; }
+            66% { color: blue; }
+            100% { color: red; }
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .contact-section {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .contact-section p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
+    <div class="header">
+        <div class="title-section">
+            <div class="word">
+                <img src="images/tire_A.png" alt="A" class="letter">
+                <img src="images/tire_T.png" alt="t" class="letter">
+            </div>
+            <div class="word">
+                <img src="images/tire_Z.png" alt="Z" class="letter">
+                <img src="images/tire_E.png" alt="e" class="letter">
+                <img src="images/tire_D.png" alt="d" class="letter">
+                <img src="images/tire_W.png" alt="w" class="letter">
+                <img src="images/tire_I.png" alt="i" class="letter">
+                <img src="images/tire_A.png" alt="a" class="letter">
+                <img src="images/tire_T.png" alt="t" class="letter">
+                <img src="images/tire_E.png" alt="e" class="letter">
+                <img src="images/tire_R.png" alt="r" class="letter">
+            </div>
+            <div class="word">
+                <img src="images/tire_D.png" alt="D" class="letter">
+                <img src="images/tire_R.png" alt="r" class="letter">
+                <img src="images/tire_I.png" alt="i" class="letter">
+                <img src="images/tire_V.png" alt="v" class="letter">
+                <img src="images/tire_I.png" alt="i" class="letter">
+                <img src="images/tire_N.png" alt="n" class="letter">
+                <img src="images/tire_G.png" alt="g" class="letter">
+            </div>
+            <div class="tire-tracks">
+                <img src="images/tire_tracks.png" alt="Tire Tracks">
+            </div>
         </div>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <!-- Add navigation links if needed -->
         </nav>
-    </header>
+        <img src="images/logo.png" alt="Logo" class="logo"> <!-- Add the logo image here -->
+    </div>
 
-    <main>
-        <section id="home">
-            <h1> @ZedwiaterDriving</h1>
-            <div class="slideshow-container">
-  <div class="slide">
-    <img src="slide.jpeg" alt="Slide 1">
-  </div>
-  <div class="slide">
-    <img src="slide2.jpeg" alt="Slide 2">
-  </div>
-  <div class="slide">
-    <img src="slide3.jpeg" alt="Slide 3">
-  </div>
-  <div class="slide">
-    <img src="slide4.jpeg" alt="Slide 4">
-  </div>
-  <div class="slide">
-    <img src="slide5.jpeg" alt="Slide 5">
-  </div>
-  <div class="slide">
-    <img src="slide6.jpg" alt="Slide 6">
-  </div>
-  <div class="slide">
-    <img src="slide7.jpeg" alt="Slide 7">
-  </div>
-  <div class="slide">
-    <img src="slide8.jpeg" alt="Slide 8">
-  </div>
-  <div class="slide">
-    <img src="slide9.png" alt="Slide 9">
-  </div>
-  <div class="slide">
-    <img src="slide10.PNG" alt="Slide 10">
-  </div>
-  <div class="slide">
-    <img src="slide11.jpeg" alt="Slide 11">
-  </div>
-  <div class="slide">
-    <img src="slide12.jpeg" alt="Slide 12">
-  </div>
-  <div class="slide">
-    <img src="slide13.jpeg" alt="Slide 13">
-  </div>
-  <div class="slide">
-    <img src="slide14.PNG" alt="Slide 14">
-  </div>
-</div>
+    <div class="container">
+        <section class="player-section">
+            <!-- Player 1 -->
+            <div class="player-card">
+                <img src="images/player1.jpg" alt="Player 1" class="player-image">
+                <h3>Tip Well</h3>
+                <p>Your Hand to Mine</p>
+            </div>
+
+            <!-- Repeat for other players -->
+            <div class="player-card">
+                <img src="images/player2.jpg" alt="Player 2" class="player-image">
+                <h3>Pay Well</h3>
+                <p>My Wallet</p>
+            </div>
+
+            <div class="player-card">
+                <img src="images/player3.jpg" alt="Player 3" class="player-image">
+                <h3>Drink Safe</h3>
+                <p>Bourbon Trail</p>
+            </div>
+
+            <div class="player-card">
+                <img src="images/player4.jpg" alt="Player 4" class="player-image">
+                <h3>Drive Safe</h3>
+                <p>Chauffer</p>
+            </div>
+
+            <div class="player-card">
+                <img src="images/player5.jpg" alt="Player 5" class="player-image">
+                <h3>Ride Safe</h3>
+                <p>Passenger</p>
+
+            </div>
         </section>
 
-        <section id="services">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Professional driving instruction</li>
-                <li>Defensive driving courses</li>
-                <li>Fleet driver training</li>
-                <li>Driver safety workshops</li>
-                <li>Individualized driving assessments</li>
-            </ul>
+        <section class="social-section">
+            <h2>Follow Us</h2>
+            <div class="social-links">
+                <!-- Add Font Awesome icons for social media links -->
+                <a href="#">https://www.facebook.com/zak.wiater<i class="fab fa-facebook"></i></a>
+                <a href="#">https://www.instagram.com/zedwiater/<i class="fab fa-instagram"></i></a>
+                <a href="#">https://x.com/zedwiater<i class="fab fa-twitter"></i></a>
+                <a href="#">https://www.youtube.com/@Zedwiater2<i class="fab fa-youtube"></i></a>
+            </div>
         </section>
 
-        <section id="about">
-            <h2>About Us</h2>
-          <ul><li><p>Over a decade of experience getting real people safe to thier destination. I am a 5 star lyft driver with over 7000 rides and almost a million miles. I enjoy giving clients a great luxurious ride in my Chrysler Pacifica Hybrid loaded with games and comfortable leather seats and bluetooth aux control for passengers to enjoy thier music.</p></li></ul>
-            <!-- Add information about your company here -->
+        <section class="about-section">
+            <div class="about-text">Rides, Rides, Rides Local and Longtrips $32.50/hr Local Per Ride Pricing</div>
         </section>
 
-        <section id="contact">
+        <section class="contact-section">
             <h2>Contact Us</h2>
-          <ul><li>Phone: 859.771.7004</li><li>Email: zedwiater2@gmail.com</li></ul>
-          <p>Rides prices are locally competitive and priced based off many factors from location,traffic,current rates,distance,and time. Follow me on snap and other socials for discounts and location info when I am driving or reach out through this online form to book your best hired ride yet.</p>
+            <p>Phone: 18597717004</p>
+            <p>Email: <a href="mailto:zedwiater2+driving@gmail.com">zedwiater2+driving@gmail.com</a></p>
         </section>
-    </main>
-
-    <footer>
-        <ul>
-            <li><a href="https://snapchat.com/t/UXi5IIs0"><i class="fab fa-snapchat"></i></a></li>
-            <li><a href="https://www.facebook.com/share/LwY2aaFp12okbpsV/?mibextid=LQQJ4d"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://www.instagram.com/zedwiater?igsh=MXVydWF6Y3lwYXZlcg%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://discord.gg/JsCqbyzr"><i class="fab fa-discord"></i></a></li>
-        </ul>
-    </footer>
-
-    <script src="slideshow.js"></script>
+    </div>
 </body>
-
 </html>
