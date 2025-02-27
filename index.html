@@ -28,9 +28,9 @@
         .logo {
             position: absolute;
             top: 10px;
-            left: 10px; /* Move the logo to the left */
-            width: 200px; /* Adjust the size as needed */
-            height: 175px; /* Adjust the size as needed */
+            left: 10px;
+            width: 200px;
+            height: 175px;
         }
 
         .title-section {
@@ -41,53 +41,52 @@
 
         .word {
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .letter {
-            padding: auto;
-            width: 50px; /* Adjust the size to 50% of the current size */
+            width: 50px;
             height: 50px;
         }
 
         .tire-tracks img {
-            padding-top: 20px;
-            width: 1000px; /* Full page width */
-            height: 50; /* Same height as the logo */
+            width: 1000px;
+            height: 50px;
         }
 
         .container {
-            background-color: #333;
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #333;
         }
 
         .player-section {
-            background-color: lightslategray;
             overflow: hidden;
             white-space: nowrap;
             margin-top: 30px;
+            background-color: lightslategray;
         }
 
-.player-card {
-    display: inline-block;
-    background-color: #333;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    position: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin-right: 20px;
-    width: 200px; /* Set a fixed width */
-    height: 300px; /* Set a fixed height */
-}
+        .player-card {
+            display: inline-block;
+            background-color: #333;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-right: 20px;
+            width: 200px;
+            height: 300px;
+        }
 
-.player-image {
-    width: 100%; /* Make the image fit the card width */
-    height: auto;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 10px;
+        .player-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
         }
 
         @keyframes scroll-players {
@@ -118,7 +117,7 @@
         .about-text {
             display: inline-block;
             padding-left: 100%;
-            font-size: 2em; /* Adjust the font size to 2/3 of the box height */
+            font-size: 2em;
             animation: scroll 10s linear infinite, colorchange 3s linear infinite;
         }
 
@@ -157,6 +156,57 @@
 
         .contact-section p {
             margin: 10px 0;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 1200px) {
+            .player-card {
+                width: 180px;
+                height: 270px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .player-card {
+                width: 160px;
+                height: 240px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .player-card {
+                width: 140px;
+                height: 210px;
+            }
+
+            .logo {
+                width: 80px;
+            }
+
+            .letter {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .player-card {
+                width: 120px;
+                height: 180px;
+            }
+
+            .logo {
+                width: 60px;
+            }
+
+            .letter {
+                width: 30px;
+                height: 30px;
+            }
+
+            .about-text {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
@@ -229,7 +279,6 @@
                 <img src="player5.jpg" alt="Player 5" class="player-image">
                 <h3>Ride Safe</h3>
                 <p>Passenger</p>
-
             </div>
         </section>
 
@@ -237,10 +286,10 @@
             <h2>Follow Us</h2>
             <div class="social-links">
                 <!-- Add Font Awesome icons for social media links -->
-                <a href="#">https://www.facebook.com/zak.wiater<i class="fab fa-facebook"></i></a>
-                <a href="#">https://www.instagram.com/zedwiater/<i class="fab fa-instagram"></i></a>
-                <a href="#">https://x.com/zedwiater<i class="fab fa-twitter"></i></a>
-                <a href="#">https://www.youtube.com/@Zedwiater2<i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/zak.wiater"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/zedwiater/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/zedwiater"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@Zedwiater2"><i class="fab fa-youtube"></i></a>
             </div>
         </section>
 
