@@ -1,160 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AtZedwiaterDriving</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
+    <title>Player Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
+        body {
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px; /* Move the logo to the left */
+            width: 200px; /* Adjust the size as needed */
+            height: 175px; /* Adjust the size as needed */
+        }
+
+        .title-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .word {
+            display: flex;
+        }
+
+        .letter {
+            padding: auto;
+            width: 50px; /* Adjust the size to 50% of the current size */
+            height: 50px;
+        }
+
+        .tire-tracks img {
+            padding-top: 20px;
+            width: 1000px; /* Full page width */
+            height: 50; /* Same height as the logo */
+        }
+
+        .container {
+            background-color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .player-section {
+            background-color: lightslategray;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-top: 30px;
+        }
+
+.player-card {
+    display: inline-block;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    position: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-right: 20px;
+    width: 200px; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+}
+
+.player-image {
+    width: 100%; /* Make the image fit the card width */
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+        }
+
+        @keyframes scroll-players {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .player-section {
+            animation: scroll-players 25s linear infinite;
+        }
+
+        .social-section {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .about-section {
+            background-color: black;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .about-text {
+            display: inline-block;
+            padding-left: 100%;
+            font-size: 2em; /* Adjust the font size to 2/3 of the box height */
+            animation: scroll 10s linear infinite, colorchange 3s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        @keyframes colorchange {
+            0% { color: red; }
+            33% { color: green; }
+            66% { color: blue; }
+            100% { color: red; }
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .contact-section {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .contact-section p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
+    <div class="header">
+        <div class="title-section">
+            <div class="word">
+                <img src="images/tire_A.png" alt="A" class="letter">
+                <img src="images/tire_T.png" alt="t" class="letter">
+            </div>
+            <div class="word">
+                <img src="images/tire_Z.png" alt="Z" class="letter">
+                <img src="images/tire_E.png" alt="e" class="letter">
+                <img src="images/tire_D.png" alt="d" class="letter">
+                <img src="images/tire_W.png" alt="w" class="letter">
+                <img src="images/tire_I.png" alt="i" class="letter">
+                <img src="images/tire_A.png" alt="a" class="letter">
+                <img src="images/tire_T.png" alt="t" class="letter">
+                <img src="images/tire_E.png" alt="e" class="letter">
+                <img src="images/tire_R.png" alt="r" class="letter">
+            </div>
+            <div class="word">
+                <img src="images/tire_D.png" alt="D" class="letter">
+                <img src="images/tire_R.png" alt="r" class="letter">
+                <img src="images/tire_I.png" alt="i" class="letter">
+                <img src="images/tire_V.png" alt="v" class="letter">
+                <img src="images/tire_I.png" alt="i" class="letter">
+                <img src="images/tire_N.png" alt="n" class="letter">
+                <img src="images/tire_G.png" alt="g" class="letter">
+            </div>
+            <div class="tire-tracks">
+                <img src="images/tire_tracks.png" alt="Tire Tracks">
+            </div>
         </div>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <!-- Add navigation links if needed -->
         </nav>
-    </header>
+        <img src="images/logo.png" alt="Logo" class="logo"> <!-- Add the logo image here -->
+    </div>
 
-    <main>
-        <section id="home">
-            <h1> AtZedwiaterDriving</h1>
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <img src="slide.jpeg" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="slide2.jpeg" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="slide3.jpeg" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="slide4.jpeg" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="slide5.JPEG.png" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="slide6.JPEG.png" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="slide7.jpeg" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="slide8.jpeg" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="slide9.png" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="slide10.png" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="slide11.jpeg" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="slide12.jpeg" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="slide13.jpeg" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="slide14.png" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="slide15.JPEG.png" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="slide16.jpeg" style="width:100%">
-                </div>
-                <!-- Add more slides as needed -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="container">
+        <section class="player-section">
+            <!-- Player 1 -->
+            <div class="player-card">
+                <img src="images/player1.jpg" alt="Player 1" class="player-image">
+                <h3>Tip Well</h3>
+                <p>Your Hand to Mine</p>
             </div>
-            <br>
-            <div class="dot-container">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-                <span class="dot" onclick="currentSlide(6)"></span>
-                <span class="dot" onclick="currentSlide(7)"></span>
-                <span class="dot" onclick="currentSlide(8)"></span>
-                <span class="dot" onclick="currentSlide(9)"></span>
-                <span class="dot" onclick="currentSlide(10)"></span>
-                <span class="dot" onclick="currentSlide(11)"></span>
-                <span class="dot" onclick="currentSlide(12)"></span>
-                <span class="dot" onclick="currentSlide(13)"></span>
-                <span class="dot" onclick="currentSlide(14)"></span>
-                <span class="dot" onclick="currentSlide(15)"></span>
-                <span class="dot" onclick="currentSlide(16)"></span>
+
+            <!-- Repeat for other players -->
+            <div class="player-card">
+                <img src="images/player2.jpg" alt="Player 2" class="player-image">
+                <h3>Pay Well</h3>
+                <p>My Wallet</p>
+            </div>
+
+            <div class="player-card">
+                <img src="images/player3.jpg" alt="Player 3" class="player-image">
+                <h3>Drink Safe</h3>
+                <p>Bourbon Trail</p>
+            </div>
+
+            <div class="player-card">
+                <img src="images/player4.jpg" alt="Player 4" class="player-image">
+                <h3>Drive Safe</h3>
+                <p>Chauffer</p>
+            </div>
+
+            <div class="player-card">
+                <img src="images/player5.jpg" alt="Player 5" class="player-image">
+                <h3>Ride Safe</h3>
+                <p>Passenger</p>
+
             </div>
         </section>
 
-        <section id="services">
-            <h2>Our Services</h2>
-
-At AtZedwiaterDriving, we offer a comprehensive range of driving services to meet all your transportation needs:
-
-Airport Transfers: Reliable and timely airport pick-up and drop-off services to ensure you never miss a flight.
-Corporate Transportation: Professional and discreet driving services for business meetings, conferences, and events.
-Special Occasions: Elegant and comfortable transportation for weddings, parties, and other special events.
-Long-Distance Travel: Safe and efficient long-distance driving services to get you to your destination, no matter how far.
-Errand Services: Convenient driving services for running errands, shopping trips, and more.
-Chauffeur Services: Personalized chauffeur services for your daily commuting needs or special occasions.
-Medical Appointments: Dependable transportation for medical appointments and treatments.
+        <section class="social-section">
+            <h2>Follow Us</h2>
+            <div class="social-links">
+                <!-- Add Font Awesome icons for social media links -->
+                <a href="#">https://www.facebook.com/zak.wiater<i class="fab fa-facebook"></i></a>
+                <a href="#">https://www.instagram.com/zedwiater/<i class="fab fa-instagram"></i></a>
+                <a href="#">https://x.com/zedwiater<i class="fab fa-twitter"></i></a>
+                <a href="#">https://www.youtube.com/@Zedwiater2<i class="fab fa-youtube"></i></a>
+            </div>
         </section>
 
-        <section id="about">
-            <h2>About Us</h2>
-        Our mission is to provide a stress-free and enjoyable driving experience, allowing you to focus on what matters most. Trust AtZedwiaterDriving for your next journey and experience the difference of a truly dedicated driving service.
-        Reach out through the below form or social media links. 
-            Text 1.859.771.7004 if you catch me close by on snapchat
+        <section class="about-section">
+            <div class="about-text">Rides, Rides, Rides Local and Longtrips $32.50/hr Local Per Ride Pricing</div>
         </section>
-        <section id="contact">
-    <h2>Contact Us</h2>
-    <form
-  action="https://formspree.io/f/xvoeeaga"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-</section>
 
-
-        
-    </main>
-
-    <footer>
-        <ul>
-            <li><a href="https://snapchat.com/t/UXi5IIs0"><i class="fab fa-snapchat"></i></a></li>
-            <li><a href="https://www.facebook.com/share/LwY2aaFp12okbpsV/?mibextid=LQQJ4d"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://www.instagram.com/zedwiater?igsh=MXVydWF6Y3lwYXZlcg%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://discord.gg/JsCqbyzr"><i class="fab fa-discord"></i></a></li>
-        </ul>
-    </footer>
-
-    <script src="slideshow.js"></script>
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Phone: 18597717004</p>
+            <p>Email: <a href="mailto:zedwiater2+driving@gmail.com">zedwiater2+driving@gmail.com</a></p>
+        </section>
+    </div>
 </body>
-
 </html>
-
