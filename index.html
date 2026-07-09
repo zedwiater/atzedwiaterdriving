@@ -45,7 +45,7 @@
         .nav-links a:hover {
             color: var(--accent-color);
         }
-        .hero {
+        .container {
             max-width: 800px;
             margin: 4rem auto;
             padding: 0 1rem;
@@ -56,23 +56,39 @@
             margin-bottom: 1rem;
             color: var(--text-main);
         }
-        .hero p {
+        .lead {
             font-size: 1.2rem;
             color: var(--text-muted);
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
+        }
+        .button-group {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         .cta-btn {
             display: inline-block;
-            background-color: var(--accent-color);
-            color: var(--bg-color);
             padding: 0.75rem 1.5rem;
             border-radius: 6px;
             text-decoration: none;
             font-weight: bold;
-            transition: opacity 0.2s;
+            transition: background-color 0.2s, color 0.2s;
         }
-        .cta-btn:hover {
-            opacity: 0.9;
+        .cta-btn.primary {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+        }
+        .cta-btn.primary:hover {
+            background-color: #7dd3fc;
+        }
+        .cta-btn.secondary {
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            background-color: transparent;
+        }
+        .cta-btn.secondary:hover {
+            background-color: var(--border-color);
         }
     </style>
 </head>
@@ -86,10 +102,14 @@
         </div>
     </nav>
 
-    <div class="hero">
-        <h1>Welcome to the Hub</h1>
-        <p>A unified platform tracking professional delivery operations, technical research developments, and scale-invariant physics systems.</p>
-        <a href="/physics.html" class="cta-btn">Explore the Ps-Cycle Framework</a>
+    <div class="container">
+        <h1>Professional Courier & Delivery Services</h1>
+        <p class="lead">Providing reliable, independent gig delivery logistics and on-demand transit operations across the region.</p>
+        
+        <div class="button-group">
+            <a href="mailto:your-email@domain.com" class="cta-btn primary">Contact for Delivery Inquiries</a>
+            <a href="/physics.html" class="cta-btn secondary">View Lab & Physics Framework</a>
+        </div>
     </div>
 
 </body>
