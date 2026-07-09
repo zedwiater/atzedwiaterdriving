@@ -55,32 +55,29 @@
             height: 50px;
         }
 
-        /* Top Navigation Styling */
+        /* Styled Navigation Bar */
         nav {
-            margin-top: 25px;
-            padding: 10px 0;
-            border-top: 1px solid #444;
+            margin-top: 15px;
             display: flex;
             justify-content: center;
-            gap: 40px;
+            gap: 20px;
         }
 
-        nav a {
-            color: #ffffff;
+        .nav-link {
+            color: white;
             text-decoration: none;
-            font-size: 1.2em;
             font-weight: bold;
-            transition: color 0.2s ease-in-out;
+            font-size: 1.1em;
+            padding: 6px 16px;
+            border: 1px solid #555;
+            border-radius: 4px;
+            background-color: #222;
+            transition: background-color 0.2s, color 0.2s;
         }
 
-        nav a:hover {
-            color: #38bdf8;
-        }
-
-        nav a.active {
-            color: #38bdf8;
-            border-bottom: 2px solid #38bdf8;
-            padding-bottom: 4px;
+        .nav-link:hover {
+            background-color: #fff;
+            color: #333;
         }
 
         .container {
@@ -270,8 +267,8 @@
             </div>
         </div>
         <nav>
-            <a href="/" class="active">Home</a>
-            <a href="/physics.html">Physics Framework</a>
+            <a href="/" class="nav-link">Home</a>
+            <a href="physics.html" class="nav-link">Physics Framework</a>
         </nav>
         <img src="logo.png" alt="Logo" class="logo"> 
     </div>
@@ -285,24 +282,28 @@
                 <p>Your Hand to Mine</p>
             </div>
 
+            <!-- Player 2 -->
             <div class="player-card">
                 <img src="player2.jpg" alt="Player 2" class="player-image">
                 <h3>Pay Well</h3>
                 <p>My Wallet</p>
             </div>
 
+            <!-- Player 3 -->
             <div class="player-card">
                 <img src="player3.jpg" alt="Player 3" class="player-image">
                 <h3>Drink Safe</h3>
                 <p>Bourbon Trail</p>
             </div>
 
+            <!-- Player 4 -->
             <div class="player-card">
                 <img src="player4.jpg" alt="Player 4" class="player-image">
                 <h3>Drive Safe</h3>
                 <p>Chauffer</p>
             </div>
 
+            <!-- Player 5 -->
             <div class="player-card">
                 <img src="player5.jpg" alt="Player 5" class="player-image">
                 <h3>Ride Safe</h3>
