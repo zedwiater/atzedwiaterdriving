@@ -3,504 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Primary SEO Metadata -->
-    <title>@zedwiaterdriving | Professional Driver & Chauffeur Services</title>
-    <meta name="description" content="Professional private driving, chauffeur services, and safe transport by @zedwiaterdriving. Affordable local and long-distance rides starting at $32.50/hr.">
-    <meta name="keywords" content="zedwiaterdriving, private driver, chauffeur service, local rides, long distance driving, Bourbon trail driver">
-    <link rel="canonical" href="https://atzedwiaterdriving.cloud/">
-
-    <!-- Social Media Open Graph (FB / Instagram / Link Shares) -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://atzedwiaterdriving.cloud/">
-    <meta property="og:title" content="@zedwiaterdriving | Professional Chauffeur & Private Driver">
-    <meta property="og:description" content="Affordable, safe private transit and driving events. Serving local and long-trip destinations.">
-    <meta property="og:image" content="https://atzedwiaterdriving.cloud/logo.png">
-
-    <!-- Social Media Meta (X / Twitter) -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://atzedwiaterdriving.cloud/">
-    <meta property="twitter:title" content="@zedwiaterdriving | Professional Driving">
-    <meta property="twitter:description" content="Affordable, safe private transit and driving events.">
-    <meta property="twitter:image" content="https://atzedwiaterdriving.cloud/logo.png">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Atzedwiater Driving Hub</title>
     <style>
-        * {
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #38bdf8;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
         }
-
-        body {
-            background-color: #121212;
-            color: #e0e0e0;
-            overflow-x: hidden;
-        }
-
-        /* Screen-reader only style for SEO indexing header */
-        .seo-hidden-title {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            border: 0;
-        }
-
-        /* Hero / Header Section */
-        .header {
-            position: relative;
-            background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
-            padding: 40px 20px;
-            text-align: center;
-            border-bottom: 3px solid #ff3333;
-        }
-
-        .brand-container {
+        nav {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto 30px auto;
-            flex-wrap: wrap;
         }
-
-        .logo-img {
-            width: 140px;
-            height: auto;
-            filter: drop-shadow(0px 4px 10px rgba(255, 51, 51, 0.3));
-            transition: transform 0.3s ease;
-        }
-
-        .logo-img:hover {
-            transform: scale(1.05) rotate(3deg);
-        }
-
-        .title-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .word-row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2px;
-            margin-bottom: 5px;
-        }
-
-        .letter {
-            height: 45px;
-            width: auto;
-            object-fit: contain;
-        }
-
-        .tire-tracks {
-            margin-top: 15px;
-            width: 100%;
-            max-width: 600px;
-            opacity: 0.7;
-        }
-
-        .tire-tracks img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* Main Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        /* Smooth Carousel Feature */
-        .carousel-title {
-            text-align: center;
-            font-size: 1.8rem;
-            margin-bottom: 25px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .carousel-title i {
-            color: #ff3333;
-        }
-
-        .carousel-wrapper {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-            background: #1a1a1a;
-            padding: 25px 0;
-            border-radius: 12px;
-            box-shadow: inset 0 0 20px rgba(0,0,0,0.8), 0 4px 15px rgba(0,0,0,0.5);
-            margin-bottom: 40px;
-        }
-
-        .carousel-track {
-            display: flex;
-            width: max-content;
-            animation: smoothScroll 30s linear infinite;
-        }
-
-        .carousel-track:hover {
-            animation-play-state: paused;
-        }
-
-        .card {
-            flex-shrink: 0;
-            width: 260px;
-            background: #262626;
-            border-radius: 8px;
-            padding: 15px;
-            margin: 0 15px;
-            text-align: center;
-            border: 1px solid #333;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-            transition: border-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .card:hover {
-            border-color: #ff3333;
-            transform: translateY(-5px);
-        }
-
-        .card-img-wrapper {
-            width: 100%;
-            height: 200px;
-            border-radius: 6px;
-            overflow: hidden;
-            margin-bottom: 15px;
-            background: #000;
-        }
-
-        .card-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .card-img.qr-code {
-            object-fit: contain;
-            padding: 10px;
-            background: #fff;
-        }
-
-        .card h3 {
-            font-size: 1.2rem;
-            color: #fff;
-            margin-bottom: 6px;
-        }
-
-        .card p {
-            font-size: 0.9rem;
-            color: #aaaaaa;
-        }
-
-        @keyframes smoothScroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-
-        /* Banner Marquee Section */
-        .marquee-banner {
-            background: #ff3333;
-            color: #fff;
-            padding: 15px 0;
-            overflow: hidden;
-            white-space: nowrap;
+        .nav-brand {
             font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border-radius: 6px;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 10px rgba(255,51,51,0.3);
-        }
-
-        .marquee-content {
-            display: inline-block;
-            padding-left: 100%;
-            animation: textMarquee 20s linear infinite;
-            font-size: 1.4rem;
-        }
-
-        @keyframes textMarquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-100%); }
-        }
-
-        /* Action & Details Grid */
-        .info-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-
-        @media (max-width: 768px) {
-            .info-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .panel {
-            background: #1a1a1a;
-            padding: 30px;
-            border-radius: 12px;
-            border: 1px solid #2a2a2a;
-        }
-
-        .panel h2 {
-            font-size: 1.5rem;
-            color: #fff;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* Social links */
-        .social-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
-        }
-
-        .social-btn {
-            background: #262626;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 15px 10px;
-            border-radius: 8px;
+            color: var(--accent-color);
             text-decoration: none;
-            transition: background 0.3s ease, color 0.3s ease;
-            font-size: 0.8rem;
-            gap: 8px;
-            border: 1px solid #333;
+            font-size: 1.2rem;
         }
-
-        .social-btn i {
-            font-size: 1.8rem;
+        .nav-links a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+            transition: color 0.2s;
         }
-
-        .social-btn:hover {
-            background: #ff3333;
-            color: #fff;
-            border-color: #ff3333;
+        .nav-links a:hover {
+            color: var(--accent-color);
         }
-
-        /* Contact List */
-        .contact-method {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 15px;
-            background: #262626;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #333;
-        }
-
-        .contact-method i {
-            font-size: 1.5rem;
-            color: #ff3333;
-            width: 30px;
+        .hero {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 0 1rem;
             text-align: center;
         }
-
-        .contact-method a, .contact-method span {
-            color: #fff;
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
             text-decoration: none;
-            font-size: 1.1rem;
-            font-weight: 500;
+            font-weight: bold;
+            transition: opacity 0.2s;
         }
-
-        .contact-method a:hover {
-            text-decoration: underline;
-            color: #ff3333;
-        }
-
-        /* Mobile Adjustments */
-        @media (max-width: 600px) {
-            .letter {
-                height: 30px;
-            }
-            .logo-img {
-                width: 100px;
-            }
-            .brand-container {
-                flex-direction: column;
-                gap: 15px;
-            }
+        .cta-btn:hover {
+            opacity: 0.9;
         }
     </style>
 </head>
 <body>
 
-    <!-- Invisible Text Header for Crawler Discovery (SEO Engines Read This Immediately) -->
-    <h1 class="seo-hidden-title">@zedwiaterdriving - Professional Private Driving and Chauffeur Services</h1>
-
-    <div class="header">
-        <div class="brand-container">
-            <!-- Tire @ logo asset acting as brand identity badge -->
-            <img src="logo.png" alt="@zedwiaterdriving Tire Logo Brand Badge" class="logo-img">
-            
-            <div class="title-section">
-                <!-- Descriptive alt attributes used for letter sequences to assist page indexing -->
-                <div class="word-row">
-                    <img src="tire_A.png" alt="At symbol - @zedwiaterdriving" class="letter">
-                    <img src="tire_T.png" alt="t" class="letter">
-                </div>
-                <div class="word-row">
-                    <img src="tire_Z.png" alt="Z" class="letter">
-                    <img src="tire_E.png" alt="e" class="letter">
-                    <img src="tire_D.png" alt="d" class="letter">
-                    <img src="tire_W.png" alt="w" class="letter">
-                    <img src="tire_I.png" alt="i" class="letter">
-                    <img src="tire_A.png" alt="a" class="letter">
-                    <img src="tire_T.png" alt="t" class="letter">
-                    <img src="tire_E.png" alt="e" class="letter">
-                    <img src="tire_R.png" alt="r" class="letter">
-                </div>
-                <div class="word-row">
-                    <img src="tire_D.png" alt="D" class="letter">
-                    <img src="tire_R.png" alt="r" class="letter">
-                    <img src="tire_I.png" alt="i" class="letter">
-                    <img src="tire_V.png" alt="v" class="letter">
-                    <img src="tire_I.png" alt="i" class="letter">
-                    <img src="tire_N.png" alt="n" class="letter">
-                    <img src="tire_G.png" alt="g" class="letter">
-                </div>
-                <div class="tire-tracks">
-                    <img src="tire_tracks.png" alt="Automotive Skid Marks and Tire Tracks Header Accent">
-                </div>
-            </div>
+    <nav>
+        <a href="/" class="nav-brand">Atzedwiater Driving</a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/physics.html">Physics Framework</a>
         </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Welcome to the Hub</h1>
+        <p>A unified platform tracking professional delivery operations, technical research developments, and scale-invariant physics systems.</p>
+        <a href="/physics.html" class="cta-btn">Explore the Ps-Cycle Framework</a>
     </div>
 
-    <div class="container">
-        
-        <h2 class="carousel-title"><i class="fas fa-circle-notch"></i> Destinations & Events <i class="fas fa-circle-notch"></i></h2>
-        
-        <!-- Seamless Infinite Performance Carousel -->
-        <div class="carousel-wrapper">
-            <div class="carousel-track">
-                <!-- Initial Track Array Set -->
-                <div class="card">
-                    <div class="card-img-wrapper"><img src="player1.jpg" alt="@zedwiaterdriving Direct Tipping Options" class="card-img qr-code"></div>
-                    <h3>Tip Well</h3>
-                    <p>Your Hand to Mine</p>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper"><img src="player2.jpg" alt="Payment Channels and QR Codes" class="card-img qr-code"></div>
-                    <h3>Pay Well</h3>
-                    <p>My Wallet</p>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper"><img src="player3.jpg" alt="Bourbon Trail Driving Destinations" class="card-img"></div>
-                    <h3>Drink Safe</h3>
-                    <p>Bourbon Trail Excursions</p>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper"><img src="player4.jpg" alt="Private Chauffeur Operations" class="card-img"></div>
-                    <h3>Drive Safe</h3>
-                    <p>Professional Chauffeur</p>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper"><img src="player5.jpg" alt="Passenger Vehicles and Logistics" class="card-img"></div>
-                    <h3>Ride Safe</h3>
-                    <p>Premium Accommodations</p>
-                </div>
-
-                <!-- Duplicate Twin Set for Flawless Loop Transition without Reset Hops -->
-                <div class="card">
-                    <div class="card-img-wrapper"><img src="player1.jpg" alt="@zedwiaterdriving Direct Tipping Options" class="card-img qr-code"></div>
-                    <h3>Tip Well</h3>
-                    <p>Your Hand to Mine</p>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper"><img src="player2.jpg" alt="Payment Channels and QR Codes" class="card-img qr-code"></div>
-                    <h3>Pay Well</h3>
-                    <p>My Wallet</p>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper"><img src="player3.jpg" alt="Bourbon Trail Driving Destinations" class="card-img"></div>
-                    <h3>Drink Safe</h3>
-                    <p>Bourbon Trail Excursions</p>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper"><img src="player4.jpg" alt="Private Chauffeur Operations" class="card-img"></div>
-                    <h3>Drive Safe</h3>
-                    <p>Professional Chauffeur</p>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper"><img src="player5.jpg" alt="Passenger Vehicles and Logistics" class="card-img"></div>
-                    <h3>Ride Safe</h3>
-                    <p>Premium Accommodations</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Clean Rates Ticker -->
-        <div class="marquee-banner">
-            <div class="marquee-content">
-                Rides, Rides, Rides • Local and Longtrips • $32.50/hr Local Per Ride Pricing • Secure Your Destination Safely
-            </div>
-        </div>
-
-        <!-- Details Grid Info Section -->
-        <div class="info-grid">
-            <!-- Social Matrix Panel -->
-            <div class="panel">
-                <h2>Follow Channels</h2>
-                <div class="social-grid">
-                    <a href="https://www.facebook.com/zak.wiater" class="social-btn" target="_blank" rel="noopener">
-                        <i class="fab fa-facebook"></i>Facebook
-                    </a>
-                    <a href="https://www.instagram.com/zedwiater/" class="social-btn" target="_blank" rel="noopener">
-                        <i class="fab fa-instagram"></i>Instagram
-                    </a>
-                    <a href="https://x.com/zedwiater" class="social-btn" target="_blank" rel="noopener">
-                        <i class="fab fa-twitter"></i>X / Twitter
-                    </a>
-                    <a href="https://www.youtube.com/@Zedwiater2" class="social-btn" target="_blank" rel="noopener">
-                        <i class="fab fa-youtube"></i>YouTube
-                    </a>
-                </div>
-            </div>
-
-            <!-- Booking Inquiries Panel -->
-            <div class="panel">
-                <h2>Schedule a Ride</h2>
-                <div class="contact-method">
-                    <i class="fas fa-phone-alt"></i>
-                    <span>Call / Text: 1-859-771-7004</span>
-                </div>
-                <div class="contact-method">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:zedwiater2+driving@gmail.com">zedwiater2+driving@gmail.com</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
 </body>
 </html>
